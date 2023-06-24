@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: black;
+}
+
+:root {
+  --violet: #8b48bf;
+  --violetLight: rgba(139, 72, 191, 0.3);
+  --lightBlue: #3cddf3;
+  --blueGray: #1e1e26;
+  --darkBlue: #242e53;
+  --lightGray: #f9f9f9;
+  --Gray: #b3b2b7;
+  --GrayFont: #b9b9c1;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 65px 165px 65px 165px;
+}
+
+.header .container label {
+  display: none;
+}
+
+.header .container input {
+  display: none;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.buttom {
+  background-color: var(--violet);
+  width: 134px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.buttom a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.buttom:hover {
+  animation: latidos 1.5s infinite alternate;
+}
+
+@keyframes latidos {
+  0% {
+    background-color: var(--violet);
+    transform: scale(1);
+  }
+
+  50% {
+    background-color: var(--lightBlue);
+    transform: scale(1.1);
+  }
+
+  100% {
+    background-color: var(--violet);
+    transform: scale(1);
+  }
+}
+/* ------------------MAIN desktop styles--------------  */
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 65px 165px 65px 165px;
+}
+
+.main__banner {
+  width: 540px;
+  height: 90%;
+}
+
+.main__information {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.main__information h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: -0.035em;
+  text-align: right;
+}
+.main__information p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.information {
+  background-color: var(--violet);
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0px 40px 0px;
+}
+
+.information h2 {
+  color: white;
+}
+
+.information p {
+  color: white;
+  width: 470px;
+}
+
+.information p:last-child {
+  display: none;
+}
+
+/* ------- benefits */
+.benefits {
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 30px;
+}
+.benefits__card {
+  width: 553px;
+  gap: 20px;
+}
+.benefits__card .title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.benefits__card .title .buttom {
+  width: 69px;
+  border-radius: 30px;
+}
+.benefits__card .title h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+.card__information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card__information p {
+  padding-left: 85px;
+  color: var(--Gray);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  width: 95%;
+}
+
+/* ----------CARDS BEST------------- */
+.best {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+.best > h2 {
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 61px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--darkBlue);
+}
+.cardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.textContainer {
+  background-color: var(--lightGray);
+  width: 445px;
+  height: 220px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  position: absolute;
+  z-index: 1;
+  margin-top: -40px;
+  border-radius: 50%;
+}
+
+.textContainer h2 {
+  margin-top: 64px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--darkBlue);
+}
+.textContainer p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--GrayFont);
+  margin: auto;
+}
+
+/* ------INFORMATION2 o LAST CHILD------------ */
+#information2 .buttom {
+  background-color: white;
+  animation: none;
+}
+#information2 .buttom a {
+  color: var(--violet);
+}
+
+/* ----------FOOTER desktop------------- */
+footer {
+  background-color: var(--blueGray);
+  color: white;
+  padding: 65px 165px 65px 165px;
+  display: flex;
+}
+.footer__widget {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list ul li{
+  display: flex;
+  justify-content: space-between;
+  width: 393px;
+  color: white;
+}
+
+.second__list ul li{
+  display: flex;
+  justify-content: space-between;
+  width: 393px;
+  color: white;
+}
+
+/* --------MEDIA QUERIESS----------- */
+@media only screen and (max-width: 480px) {
+  /*header*/
+  .header .container {
+    padding: 40px 0px 40px 0px;
+    width: 85%;
+    margin: auto;
+  }
+  .header .container label {
+    display: flex;
+  }
+  .nav {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 115px;
+    padding: 1em;
+    left: -200%;
+    width: 50%;
+    gap: 1em;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--violet);
+  }
+  .nav li a {
+    color: white;
+  }
+  
+  #menu:checked ~ nav {
+    left: 50%;
+  }
+  .container .buttom {
+    display: none;
+  }
+  /* -------------MAIN mobile-------------------- */
+  .main {
+    flex-direction: column;
+    margin: auto;
+    padding: 40px 0px 40px 0px;
+    gap: 80px;
+    width: 85%;
+  }
+
+  .main .main__banner img,
+  .main__information {
+    width: 100%;
+  }
+  .main__information h1 {
+    font-size: 40px;
+  }
+  .main__information p {
+    font-size: 14px;
+  }
+
+  /* ------------Information MOBILE-------------- */
+  .information {
+    flex-direction: column;
+    background-color: var(--lightBlue);
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  .information h2,
+  .information p {
+    width: 90%;
+    margin: auto;
+  }
+  .information h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .information p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .information p {
+    display: none;
+  }
+  .information p:last-child {
+    display: flex;
+  }
+  /* ------------BENEFITS mobile--------------- */
+  .benefits {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 34px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .benefits__card {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .benefits__card .title {
+    background-color: var(--violetLight);
+    border-radius: 30px 0px 0px 30px;
+    overflow: hidden;
+  }
+  .benefits__card .title .buttom {
+    animation: none;
+    overflow: auto;
+  }
+  .card__information p {
+    padding: 0px;
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+/* ---------------------ACA ACABA mediaaa QUERIESSS------------------ */
